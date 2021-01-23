@@ -1,0 +1,289 @@
+/*
+    1- make matrix
+    2- make all pages
+    3- complate ads section 
+    4- add phtoto 
+    5- make show more toogle
+*/
+body{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(21,32,43);
+    color: white;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    padding:200px;
+    padding-top: 0;
+}
+.icons{
+    flex-shrink: 1;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+.icons div {
+    margin-bottom: 30px;
+}
+.icons button{
+    width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(21,32,43);
+    border: solid  rgb(21,32,43) 1px;
+    transition: .3s all ease-in-out;
+}
+.icons div svg{
+    transition: .3s all ease-in-out;
+}
+.icons div button:hover{
+    background-color: hsl(204, 70%, 53%,.4);
+}
+.icons div svg, h2{
+    display: inline;
+    margin-left: 20px;
+}
+.icons .tweet-button{
+    background-color: #3498db;
+    width: 35%;
+    border-radius: 50px;
+    height: 60px;
+    padding:10px;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.info{
+    direction: rtl;
+    width: 40%;
+    flex-shrink: 1;
+    margin-left: 50px;
+    border-left: 1px gray solid;
+    border-right: 1px gray solid;
+}
+.info header{
+    border-bottom: 1px gray solid;
+}
+.info header{
+    padding-left: 20px;
+}
+.info nav{
+    padding: 20px;    direction: ltr;
+
+}
+.info nav .nav-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info nav .imags{
+    margin-left: 10px;
+    display: block;
+    border-bottom: solid 1px gray;
+}
+.info nav .imags svg{
+    margin-left:10px;
+    margin-top: 20px;
+    transition: .3s all ease-in-out;
+}
+.info nav .imags svg:hover{
+    transform: scale(1.3,1.3);
+}
+.info nav img{
+    border-radius: 50%;
+}
+.info nav input{
+    color:gray;
+    display: inline;
+    margin-left: 10px;
+    max-width: 100%;
+    background-color: rgb(21,32,43);
+    border: solid  rgb(21,32,43) 1px;
+}
+.info .tweet{
+    padding:10px;
+}
+.info .tweet .frist-tweet{
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+
+}
+.info .tweet .frist-tweet .avatar{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    overflow: hidden;
+    direction: ltr;
+}
+.info .tweet .frist-tweet .avatar img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.info .tweet .frist-tweet .content{
+    width: 100%;
+}
+.info .tweet .frist-tweet h1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.info .tweet .frist-tweet h5{
+    color: rgb(116,132,145);
+}
+.info .tweet .content-tweet{
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.info .tweet .frist-tweet svg{
+    transition: .3s all ease-in-out;
+    
+}
+.info .tweet .frist-tweet .love{  
+    direction: ltr;
+    margin-top: 10px;  
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info .tweet .frist-tweet svg:hover{
+    transform: scale(1.3,1.3);
+}
+.ads{
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    flex-shrink: 1;
+}
+.ads h1{
+    font-size: 20px;
+    width: 70%;
+}
+.ads  input{
+    color: rgb(99,115,128);
+    background-color: rgb(37,51,65);
+    border-radius: 50px;
+    border: 1px solid #0f2436;
+    width: 95%;
+    margin-bottom: 20px;
+    height: 30px;
+    padding: 10px;
+}
+.ads .happening{
+    background-color: rgb(25,39,52);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.ads .happening .frist-news-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+}
+.ads .happening .frist-news{
+    direction: rtl;
+    border-top: 1px solid rgb(116,132,145);
+    border-bottom: 1px solid rgb(116,132,145);
+}
+.ads .happening .frist-news p{
+    color: rgb(116,132,145);
+}
+.ads .happening .frist-news .ago{
+    display: inline;
+}
+.ads .frist-news-flex img{
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.ads .happening .last-news{
+    direction: ltr;
+}
+.ads .happening .last-news a , .ads .follow a{
+    color: #3498db;
+    text-decoration: none;
+}
+.ads .follow{
+    background-color: rgb(25,39,52);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.ads .follow img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.ads .follow .frist-acc{
+    border-top: 1px solid rgb(116,132,145);
+    border-bottom: 1px solid rgb(116,132,145);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.ads .follow .frist-acc h1{
+    margin: 10px;
+}
+.ads .follow .frist-acc p{
+    margin: 10px;
+}
+
+.messgae-button{
+    height: 70px;
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    width: 20%;
+    right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(21,32,43);
+    box-shadow: 3px 0 10px gray;
+    border-radius: 20px 20px 0 0;
+    
+}
+.message svg{
+    padding-top: 30px;
+}
+.messgae-button:hover{
+    height: 400px;
+}
+.message .show{
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: white;
+}
+.messgae-button:hover .show{
+    display: block;
+    color: white;
+}
+@media only screen and (max-width: 1450px){
+    .ads{
+        display: none;
+
+    }
+    .icons h2{
+        display: none;
+    }
+    .icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons .tweet-button{
+        width:80%;
+    }
+}
